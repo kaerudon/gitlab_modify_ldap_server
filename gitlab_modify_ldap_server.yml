@@ -1,0 +1,10 @@
+- name: gitlab.rb modify ldap server address
+  hosts: all
+  gather_facts: no
+  become: yes
+  
+  tasks:  
+    - lineinfile:
+        path: /etc/gitlab/gitab.rb
+        regexp: '^host: '100.102.145.79''
+        line: 'host: '100.102.145.80''
