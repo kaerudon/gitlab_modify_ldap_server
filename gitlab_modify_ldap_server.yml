@@ -6,11 +6,11 @@
   
   tasks:
    - name: replace text file
-       replace:
-         dest: /tmp/test.txt
-         regexp: 'aaa'
-         replace: 'bbb'
-         backup: yes
+     replace:
+       dest: /tmp/test.txt
+       regexp: 'aaa'
+       replace: 'bbb'
+       backup: yes
         
 
    # - lineinfile:
