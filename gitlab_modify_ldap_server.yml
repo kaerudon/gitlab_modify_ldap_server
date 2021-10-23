@@ -1,14 +1,15 @@
+---
 - name: gitlab.rb modify ldap server address
   hosts: all
   gather_facts: no
   become: yes
   
   tasks:
-     replace:
-       dest: /tmp/gitab.rb
-       regexp: '100.102.145.79'
-       replace: 'aaa.aaa.aaa.aaa'
-       backup: yes
+    replace:
+      dest: /tmp/gitab.rb
+      regexp: '100.102.145.79'
+      replace: 'aaa.aaa.aaa.aaa'
+      backup: yes
     
    # - lineinfile:
    #     path: /tmp/gitab.rb
