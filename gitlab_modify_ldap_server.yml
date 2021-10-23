@@ -7,7 +7,7 @@
   tasks:
    - name: replace text file
      replace:
-       dest: /tmp/gitab.rb
+       dest: /tmp/gitlab.rb
        regexp: '100.102.145.79'
        replace: '100.102.145.80'
        backup: yes
