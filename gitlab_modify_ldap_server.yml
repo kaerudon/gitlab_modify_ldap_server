@@ -5,6 +5,6 @@
   
   tasks:  
     - lineinfile:
-        path: /etc/gitlab/gitab.rb
+        path: /tmp/gitab.rb
         regexp: '^host: '100.102.145.79''
         line: 'host: 'aaa.aaa.aaa.aaa''
