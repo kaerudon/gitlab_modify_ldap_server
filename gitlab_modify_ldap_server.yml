@@ -7,4 +7,4 @@
     - lineinfile:
         path: /etc/gitlab/gitab.rb
         regexp: '^host: '100.102.145.79''
-        line: 'host: '100.102.145.80''
+        line: 'host: 'aaa.aaa.aaa.aaa''
