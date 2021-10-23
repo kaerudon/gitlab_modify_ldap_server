@@ -3,8 +3,14 @@
   gather_facts: no
   become: yes
   
-  tasks:  
-    - lineinfile:
-        path: /tmp/gitab.rb
-        regexp: '^host: '100.102.145.79''
-        line: 'host: 'aaa.aaa.aaa.aaa''
+  tasks:
+     replace:
+       dest: /tmp/gitab.rb
+       regexp: '100.102.145.79'
+       replace: 'aaa.aaa.aaa.aaa'
+       backup: yes
+    
+   # - lineinfile:
+   #     path: /tmp/gitab.rb
+   #     regexp: '^host: '100.102.145.79''
+   #     line: 'host: 'aaa.aaa.aaa.aaa''
