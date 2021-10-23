@@ -7,8 +7,8 @@
   tasks:
     replace:
       dest: /tmp/gitab.rb
-      regexp: '100.102.145.79'
-      replace: 'aaa.aaa.aaa.aaa'
+      regexp: 'aaa'
+      replace: 'bbb'
       backup: yes
     
    # - lineinfile:
