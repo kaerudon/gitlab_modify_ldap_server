@@ -8,9 +8,18 @@
    - name: replace text file
      replace:
        dest: /tmp/gitlab.rb
-       regexp: '100.102.145.80'
-       replace: '100.102.145.79'
+       regexp: '{{change_ad_host_before}}'
+       replace: '{{change_ad_host_after}}'
        backup: yes
+   
+   #- name: replace text file
+   #  replace:
+   #    dest: /tmp/gitlab.rb
+   #    regexp: '100.102.145.80'
+   #    replace: '100.102.145.79'
+   #    backup: yes
+       
+   
         
 
    # - lineinfile:
