@@ -5,12 +5,14 @@
   become: yes
   
   tasks:
-    replace:
-      dest: /tmp/gitab.rb
-      regexp: 'aaa'
-      replace: 'bbb'
-      backup: yes
-    
+   - name: replace text file
+      replace:
+        dest: /tmp/test.txt
+        regexp: 'aaa'
+        replace: 'bbb'
+        backup: yes
+        
+
    # - lineinfile:
    #     path: /tmp/gitab.rb
    #     regexp: '^host: '100.102.145.79''
